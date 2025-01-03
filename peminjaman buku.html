@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+      <head>
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+          <link rel="stylesheet" href="../CSS/peminjaman buku.css">
+          <link rel="shortcut icon" href="../ASSETS/Pic 1.jpg">
+          <title>Peminjaman Buku</title>
+      </head>
+      <body>
+
+        <div class="header">
+            <img src="../ASSETS/Pic 1.jpg" height="50px" width="50px">
+            <a href="#default" class="logo">Perpustakaan Digital</a>
+          
+            <div class="header-right">
+              <form>
+                <input type="text" placeholder="Cari Buku..." name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+              </form>
+          <div id="mySidepanel" class="sidepanel">
+              <img src="../ASSETS/Pic 1.jpg"><br>
+              <p>Perpustakaan Digital</p>
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+              <a href="../HTML/login.html">Login</a>
+              <a href="../HTML/index.html">Beranda</a>
+              <a href="../HTML/peminjaman buku.html">Peminjaman Buku</a>
+              <a href="../HTML/about us.html">Tentang Kami</a>
+          </div>
+        
+          <button class="openbtn" onclick="openNav()">☰</button> 
+          </div>
+        </div>
+      
+        <section class="peminjaman">
+          <h2>Form Peminjaman Buku</h2>
+          <form id="peminjamanForm">
+            <label for="nama">Nama Lengkap:</label>
+            <input type="text" id="nama" name="nama" required>
+      
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="tanggalPeminjaman">Tanggal Peminjaman</label>
+            <input type="date" id="tanggalPeminjaman" required>
+      
+            <label for="buku">Pilih Buku:</label>
+            <select id="buku" name="buku" required>
+              <option value="Manusia Setengah Salmon">Manusia Setengah Salmon</option>
+              <option value="Sistem Informasi Manajemen : Mengelola Perusahaan Digital">Sistem Informasi Manajemen : Mengelola Perusahaan Digital</option>
+              <option value="Rumah Lebah">Rumah Lebah</option>
+              <option value="Harry Potter and the Philosopher's Stone">Harry Potter and the Philosopher's Stone</option>
+              <option value="Sistem dan Manajemen Pemeliharaan">Sistem dan Manajemen Pemeliharaan</option>
+              <option value="To Kill a Mockingbird">To Kill a Mockingbird</option>
+
+            </select>
+      
+            <button type="submit">Ajukan Peminjaman</button>
+          </form>
+        </section>
+
+        <section class="riwayat-transaksi">
+          <h2>Riwayat Transaksi</h2>
+          <ul id="riwayatList">
+            <!-- Riwayat transaksi akan ditampilkan di sini -->
+          </ul>
+        </section>
+      
+        <footer>
+            <p>&copy; 2025 Perpustakaan Digital. Semua hak cipta dilindungi.</p>
+        </footer>
+
+        <script src="../JS/script.js"></script>
+      </body>
+</html>
